@@ -11,26 +11,54 @@ class Space
     /**
      * Constructor 
      * 
-     * @param int $chars The number of white space characters to display
+     * @param int $chars The number of space characters to display
+     * @param string $kind Determines the kind of space to return. Values: space | escaped  
+     * 
+     * @return string 
+    */
+    
+    public function __construct(int $chars = 1, string $kind = 'space')
+    {
+        if ('space' == $kind) {
+            foreach($this->whitesSpace($chars) as $space) {
+                return $space;
+            }
+        }
+
+    }
+    
+    /**
+     * Generator that producted a space ' '
+     *
+     * This is a simple generator that returns a space in the form of a ' '.
+     *
+     * @param int $chars The number of of space characters to produce
+     * 
+     * @return string
      */
     
-    public function __construct(int $chars, string $type)
+    public function whitesSpace($chars)
     {
-        if ($chars > 1) {
-            $this->chars = $chars;
-        } else {
-            $this->chars = 1;
+        for ($i = 0; $i < $chars; $i++) {
+            yield " ";
         }
     }
+
+    /**
+     * Generator that produces an escaped space
+     *
+     * This is a simple generator that returns a space in the form of an escaped space.
+     *
+     * @param int $chars The number of of space characters to produce
+     * 
+     * @return string
+     */
     
-    public function whitesSpace()
+    public function whitesSpaceEscape($chars)
     {
-        yield ' ';
-    }
-    
-    pubic function whitesSpaceEscape()
-    {
-        yield '\040';
+        for ($i = 0; $i < $chars; $i++) {
+            yield "\040";
+        }
     }
     
 }
