@@ -28,7 +28,7 @@ class Space
     }
     
     /**
-     * Generator that producted a space ' '
+     * Generator that produced a space ' '
      *
      * This is a simple generator that returns a space in the form of a ' '.
      *
