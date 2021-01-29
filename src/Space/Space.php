@@ -2,27 +2,42 @@
 
 declare(strict_types=1);
 
-namespace Newball\SpaceTools\Space;
+namespace Newball\SpaceTools;
 
 class Space
 {
     protected $chars;
+    protected $kind;
+    
+    public $spaces;
     
     /**
      * Constructor 
      * 
      * @param int $chars The number of space characters to display
-     * @param string $kind Determines the kind of space to return. Values: space | escaped  
-     * 
-     * @return string 
+     * @param string $kind Determines the kind of space to return. Values: space | escaped   
     */
     
     public function __construct(int $chars = 1, string $kind = 'space')
     {
-        if ('space' == $kind) {
-            foreach($this->whitesSpace($chars) as $space) {
-                return $space;
+        $this->chars = $chars;
+        $this->kind = $kind;
+        
+        $this->generateSpace();
+        
+        return $this->spaces;
+    }
+
+    private function generateSpace()
+    {
+        if ('space' == $this->kind) {
+            foreach($this->whitesSpace($this->chars) as $space) {   
+                $this->spaces .= $space;
             }
+        } elseif ('escaped' == $this->kind) {
+            foreach($this->whitesSpace($this->chars) as $space) {   
+                $this->spaces .= $space;
+            }            
         }
 
     }
@@ -37,7 +52,7 @@ class Space
      * @return string
      */
     
-    public function whitesSpace($chars)
+    private function whitesSpace($chars)
     {
         for ($i = 0; $i < $chars; $i++) {
             yield " ";
@@ -54,7 +69,7 @@ class Space
      * @return string
      */
     
-    public function whitesSpaceEscape($chars)
+    private function whitesSpaceEscape($chars)
     {
         for ($i = 0; $i < $chars; $i++) {
             yield "\040";
