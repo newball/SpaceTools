@@ -1,6 +1,53 @@
-build
-composer.lock
-vendor
-phpcs.xml
-phpunit.xml
-.phpunit.result.cache
+{
+    "name": "Newball/SpaceTools",
+    "type": "library",
+    "description": "Generating white spaces and line breaks / newlines for repetitive and frequent use.",
+    "keywords": [
+        "Newball",
+        "SpaceTools",
+        "Line breaks",
+        "Newlines",
+        "White Space",
+        "Space"
+    ],
+    "homepage": "https://github.com/Newball/SpaceTools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leo Newball, Jr.",
+            "email": "contact@leonewball.com",
+            "homepage": "https://leonewball.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Newball\\SpaceTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Newball\\SpaceTools\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
