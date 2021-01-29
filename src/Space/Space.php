@@ -43,7 +43,7 @@ class Space
                 $this->spaces .= $space;
             }
         } elseif ('escaped' == $this->kind) {
-            foreach($this->whitesSpace($this->chars) as $space) {   
+            foreach($this->whitesSpaceEscape($this->chars) as $space) {   
                 $this->spaces .= $space;
             }            
         }
