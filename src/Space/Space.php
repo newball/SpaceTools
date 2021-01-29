@@ -6,9 +6,19 @@ namespace Newball\SpaceTools;
 
 class Space
 {
+    /**
+     * @var int This contains the amount of white spaces to be used
+     */
     protected $chars;
+    
+    /**
+     * @var string This contains the type of space that is being returned. Accepts: space | escaped
+     */
     protected $kind;
     
+    /**
+     * @var string this holds the actual spaces generated
+     */
     public $spaces;
     
     /**
