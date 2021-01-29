@@ -34,8 +34,6 @@ class Space
         $this->kind = $kind;
         
         $this->generateSpace();
-        
-        return $this->spaces;
     }
 
     private function generateSpace()
