@@ -14,7 +14,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Leo Newball, Jr.",
+            "name": "Leo Newball",
             "email": "contact@leonewball.com",
             "homepage": "https://leonewball.com",
             "role": "Developer"
@@ -44,7 +44,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.1-dev"
         }
     },
     "config": {

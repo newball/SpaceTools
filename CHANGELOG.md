@@ -6,7 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- HTML formatted black space and new lines
+- HTML formatted blank space and new lines
+
+## [1.1] - 2021-02-04
+
+### Added
+- Unit Testing
+- Additional code reference information to README.md (namely Scrutinzer)
+- An MIT License, How to Contribute, and Code of Conduct
+
+### Changed
+- PHP requirement is now PHP 7.2 and greater
+
+### Removed
+- Previous templated text / information
+
+### Fixed
+- The incorrect property being called in the Newline file. Now correctly define as $nl
+- Typos and typography errors in the README.md file
 
 ## [1.0.0] - 2021-01-29
 
