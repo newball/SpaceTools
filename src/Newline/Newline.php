@@ -26,7 +26,7 @@ class Newline
      * 
      * @param int $lines The number of newlines to create
      * @param string $kind Determines the kind of newline to return. Values: linebreak | return | both
-    */
+     */
     
     public function __construct(int $lines = 1, string $kind = 'linebreak')
     {
@@ -39,15 +39,15 @@ class Newline
     private function generateBreak()
     {
         if ('linebreak' == $this->kind) {
-            foreach($this->lineBreak($this->lines) as $linebreak) {   
+            foreach ($this->lineBreak($this->lines) as $linebreak) {   
                 $this->nl .= $linebreak;
             }
         } elseif ('return' == $this->kind) {
-            foreach($this->lineReturn($this->lines) as $linebreak) {   
+            foreach ($this->lineReturn($this->lines) as $linebreak) {   
                 $this->nl .= $linebreak;
             }            
         } elseif ('both' == $this->kind) {
-            foreach($this->lineBoth($this->lines) as $linebreak) {   
+            foreach ($this->lineBoth($this->lines) as $linebreak) {   
                 $this->nl .= $linebreak;
             }                        
         }

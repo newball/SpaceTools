@@ -26,7 +26,7 @@ class Space
      * 
      * @param int $chars The number of space characters to display
      * @param string $kind Determines the kind of space to return. Values: space | escaped   
-    */
+     */
     
     public function __construct(int $chars = 1, string $kind = 'space')
     {
@@ -39,11 +39,11 @@ class Space
     private function generateSpace()
     {
         if ('space' == $this->kind) {
-            foreach($this->whitesSpace($this->chars) as $space) {   
+            foreach ($this->whitesSpace($this->chars) as $space) {   
                 $this->spaces .= $space;
             }
         } elseif ('escaped' == $this->kind) {
-            foreach($this->whitesSpaceEscape($this->chars) as $space) {   
+            foreach ($this->whitesSpaceEscape($this->chars) as $space) {   
                 $this->spaces .= $space;
             }            
         }

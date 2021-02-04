@@ -33,7 +33,7 @@ final class NewlineTest extends TestCase
      */
     public function testCanCreateLineReturn()
     {
-        $newlineTest = new Newline(1,'return');
+        $newlineTest = new Newline(1, 'return');
         $nl = $newlineTest->nl;
         $this->assertEquals("\r", $nl);
     }
@@ -43,7 +43,7 @@ final class NewlineTest extends TestCase
      */
     public function testCanCreateMultipleLineReturn()
     {
-        $newlineTest = new Newline(5,'return');
+        $newlineTest = new Newline(5, 'return');
         $nl = $newlineTest->nl;
         $this->assertEquals("\r\r\r\r\r", $nl);
     }
@@ -53,7 +53,7 @@ final class NewlineTest extends TestCase
      */
     public function testCanCreateLineBoth()
     {
-        $newlineTest = new Newline(1,'both');
+        $newlineTest = new Newline(1, 'both');
         $nl = $newlineTest->nl;
         $this->assertEquals("\r\n", $nl);
     }
@@ -63,7 +63,7 @@ final class NewlineTest extends TestCase
      */
     public function testCanCreateMultipleLineBoth()
     {
-        $newlineTest = new Newline(9,'both');
+        $newlineTest = new Newline(9, 'both');
         $nl = $newlineTest->nl;
         $this->assertEquals("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", $nl);
     }
