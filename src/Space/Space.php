@@ -57,7 +57,7 @@ class Space
      *
      * @param int $chars The number of of space characters to produce
      * 
-     * @return string
+     * @return Generator
      */
     
     private function whitesSpace($chars)
@@ -74,7 +74,7 @@ class Space
      *
      * @param int $chars The number of of space characters to produce
      * 
-     * @return string
+     * @return Generator
      */
     
     private function whitesSpaceEscape($chars)

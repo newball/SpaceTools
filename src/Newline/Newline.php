@@ -60,7 +60,7 @@ class Newline
      *
      * @param int $lines The number of newlines to produce
      * 
-     * @return string
+     * @return Generator
      */
     
     private function lineBreak($lines)
@@ -77,7 +77,7 @@ class Newline
      *
      * @param int $lines The number of newlines to produce
      * 
-     * @return string
+     * @return Generator
      */
     
     private function lineReturn($lines)
@@ -94,7 +94,7 @@ class Newline
      *
      * @param int $lines The number of of newline to produce
      * 
-     * @return string
+     * @return Generator
      */
     
     private function lineBoth($lines)
