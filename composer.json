@@ -1,5 +1,5 @@
 {
-    "name": "newball/space-tools",
+    "name": "newball/spacetools",
     "type": "library",
     "description": "Generating white spaces and line breaks / newlines for repetitive and frequent use.",
     "keywords": [
@@ -44,7 +44,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.1-dev"
+            "dev-master": "1.1.1-dev"
         }
     },
     "config": {
