@@ -8,7 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - HTML formatted blank space and new lines
 
-## [1.1] - 2021-02-04
+## [1.1.1] - 2021-02-04
+
+### Fixed
+- Package name changed to space-tools for identification on Packagist
+
+## [1.1.0] - 2021-02-04
 
 ### Added
 - Unit Testing

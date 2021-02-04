@@ -1,5 +1,5 @@
 {
-    "name": "Newball/SpaceTools",
+    "name": "newball/space-tools",
     "type": "library",
     "description": "Generating white spaces and line breaks / newlines for repetitive and frequent use.",
     "keywords": [
