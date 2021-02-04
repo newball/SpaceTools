@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 - HTML formatted blank space and new lines
 
+## [1.1.2] - 2021-02-04
+
+### Fixed
+- Spacing issues within the code (yeah I know this is funny). Aligning with PSR-12 formatting.
+
 ## [1.1.1] - 2021-02-04
 
 ### Fixed
