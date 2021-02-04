@@ -40,15 +40,15 @@ class Newline
     {
         if ('linebreak' == $this->kind) {
             foreach($this->lineBreak($this->lines) as $linebreak) {   
-                $this->br .= $linebreak;
+                $this->nl .= $linebreak;
             }
         } elseif ('return' == $this->kind) {
             foreach($this->lineReturn($this->lines) as $linebreak) {   
-                $this->br .= $linebreak;
+                $this->nl .= $linebreak;
             }            
         } elseif ('both' == $this->kind) {
             foreach($this->lineBoth($this->lines) as $linebreak) {   
-                $this->br .= $linebreak;
+                $this->nl .= $linebreak;
             }                        
         }
     }
